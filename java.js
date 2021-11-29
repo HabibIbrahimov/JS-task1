@@ -36,14 +36,22 @@
 
 
 //EVENNUMBERS
- let Numbers = [2,4,5,7,11,12]
- function returnEvenNumbersFromArray(array) {
-	finishedArray = []
-	array.forEach(function(num) {
-  	if(!(num % 2)) {
-    	finishedArray.push(num)
-    }
-  })
-  return finishedArray;
+//  let Numbers = [2,4,5,7,11,12]
+//  function returnEvenNumbersFromArray(array) {
+// 	finishedArray = []
+// 	array.forEach(function(num) {
+//   	if(!(num % 2)) {
+//     	finishedArray.push(num)
+//     }
+//   })
+//   return finishedArray;
+// }
+// console.log(returnEvenNumbersFromArray(Numbers))
+
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+function myFunction(value) {
+    return value * 2;
 }
-console.log(returnEvenNumbersFromArray(Numbers))
+console.log(numbers2)
